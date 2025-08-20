@@ -47,7 +47,7 @@ cat < file1
 
 cat < file2
 ## OUTPUT
-![Alt text](<../../os exp 01.png>)
+![Alt text](<../../os exp01-1.png>)
 
 # Comparing Files
 cmp file1 file2
