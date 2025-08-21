@@ -55,6 +55,8 @@ cat < file2
 
 # Comparing Files
 cmp file1 file2
+
+![Alt text](os_exp01_3.png)
 ## OUTPUT
  
 comm file1 file2
