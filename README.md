@@ -39,6 +39,9 @@ lalit chowdury
 s.n. dasgupta
 ^d
 ```
+
+![Alt text](./os_exp01_01.png)
+
 ### Display the content of the files
 cat < file1
 ## OUTPUT
@@ -47,7 +50,8 @@ cat < file1
 
 cat < file2
 ## OUTPUT
-![Alt text](<../../os exp01-1.png>)
+
+![Alt text](../../os_exp01_2.png)
 
 # Comparing Files
 cmp file1 file2
