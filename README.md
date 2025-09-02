@@ -259,53 +259,53 @@ sed  -e 's/Ram/Sita/' file23
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
-
+![Alt text](os-18.png)
 
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
-
+![Alt text](os-19.png)
 
 
 sed -n -e '1,5p' file23
 ## OUTPUT
-
+![Alt text](os-20.png)
 
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
-
+![Alt text](os-21.png)
 
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
-
+![Alt text](os-22.png)
 
 
 seq 10 
 ## OUTPUT
-
+![Alt text](os-23.png)
 
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
-
+![Alt text](os-24.png)
 
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
 
-
+![Alt text](os-25.png)
 
 seq 3 | sed '2a hello'
 ## OUTPUT
-
+![Alt text](os-26.png)
 
 
 seq 2 | sed '2i hello'
 ## OUTPUT
-
+![Alt text](os-27.png)
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
