@@ -65,7 +65,7 @@ comm file1 file2
  
 diff file1 file2
 ## OUTPUT
-![Alt text](<cmp os exp.png>)
+
 
 #Filters
 
@@ -93,14 +93,11 @@ cut -c1-3 file11
 
 
 cut -d "|" -f 1 file22
-![Alt text](<hello world os exp.png>)
-![Alt text](<cat file22 os exp.png>)
-
 ## OUTPUT
 
 
+
 cut -d "|" -f 2 file22
-![Alt text](<cut f2 os exp.png>)
 ## OUTPUT
 
 
@@ -116,41 +113,40 @@ hello world
  
 grep Hello newfile 
 ## OUTPUT
-![Alt text](backupdir/cat%3Efile.png)
 
 
 
 grep hello newfile 
 ## OUTPUT
-![Alt text](<backupdir/grep hello.png>)
+
 
 
 
 grep -v hello newfile 
 ## OUTPUT
-![Alt text](<backupdir/grep -v.png>)
+
 
 
 cat newfile | grep -i "hello"
 ## OUTPUT
-![Alt text](<backupdir/cat new.png>)
+
 
 
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
-![Alt text](<backupdir/cat new-2.png>)
+
 
 
 
 grep -R ubuntu /etc
 ## OUTPUT
-![Alt text](<backupdir/grep -r.png>)
+
 
 
 grep -w -n world newfile   
 ## OUTPUT
-![Alt text](<backupdir/grep w.png>)
+
 
 cat < newfile 
 ```
@@ -173,60 +169,60 @@ Linux is best in this World
  ```
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
-![Alt text](backupdir/cat-2.png)
+
 
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
-![Alt text](os-3.png)
+
 
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
-![Alt text](os4.png)
+
 
 
 
 egrep '(^hello)' newfile 
 ## OUTPUT
-![Alt text](os-5.png)
+
 
 
 egrep '(world$)' newfile 
 ## OUTPUT
-![Alt text](os-6.png)
+
 
 
 egrep '(World$)' newfile 
 ## OUTPUT
-![Alt text](os-10.png)
+
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
-![Alt text](os05.png)
+
 
 
 egrep '[1-9]' newfile 
 ## OUTPUT
-![Alt text](os06.png)
+
 
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
-![Alt text](os-11.png)
+
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
-![Alt text](os-12.png)
+
 
 egrep l{2} newfile
 ## OUTPUT
-![Alt text](os13.png)
+
 
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
-![Alt text](os-14.png)
+
 
 cat > file23
 ```
@@ -244,17 +240,17 @@ cat > file23
 
 sed -n -e '3p' file23
 ## OUTPUT
-![Alt text](os-15.png)
+
 
 
 sed -n -e '$p' file23
 ## OUTPUT
-![Alt text](os07.png)
+
 
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
-![Alt text](os-16.png)
+
 
 
 sed  -e '2s/Ram/Sita/' file23
