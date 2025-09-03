@@ -88,19 +88,17 @@ cat > file22
 
 cut -c1-3 file11
 ## OUTPUT
-
-
-
-
 cut -d "|" -f 1 file22
+
 ![Alt text](<hello world os exp.png>)
+
 ![Alt text](<cat file22 os exp.png>)
 
 ## OUTPUT
-
-
 cut -d "|" -f 2 file22
-![Alt text](<cut f2 os exp.png>)
+!
+[Alt text](<cut f2 os exp.png>)
+
 ## OUTPUT
 
 
