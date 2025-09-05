@@ -712,7 +712,8 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
-
+![Alt text](os-58.png)
+![Alt text](os-59.png)
 
 # testing compound comparisons
 cat> ifcompound.sh 
@@ -728,7 +729,7 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
-
+![Alt text](os-60.png)
 # using the case command
 cat >casecheck.sh 
 ```bash
@@ -747,7 +748,7 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
- 
+ ![Alt text](os-61.png)
 cat > whiletest
 ```bash
 #!/bin/bash
@@ -762,7 +763,7 @@ done
 $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
- 
+ ![Alt text](os-62.png)
  
 cat untiltest.sh 
 ```bash
@@ -860,7 +861,9 @@ Bhadrachalam
 Khammam
 
 ## OUTPUT
-
+![Alt text](os-63.png)
+![Alt text](os-64.png)
+![Alt text](os-65.png)
 
 cat forctype.sh 
 ```bash
@@ -874,7 +877,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
 ## OUTPUT
-
+![Alt text](os-66.png)
 cat forctype1.sh 
 ```bash
 #!/bin/bash
@@ -887,7 +890,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
 ## OUTPUT
-
+![Alt text](os-67.png)
 cat fornested1.sh 
 ```bash
 #!/bin/bash
@@ -905,7 +908,7 @@ $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
  ## OUTPUT
-
+![Alt text](<Screenshot at 2025-09-05 11-05-02.png>)
  
 cat forbreak.sh 
 ```bash
@@ -922,7 +925,7 @@ done
 echo "The for loop is completed“
 ```
 ## OUTPUT
-
+![Alt text](os-68.png)
 $ chmod 755 forbreak.sh
  
 $ ./forbreak.sh 
@@ -947,7 +950,7 @@ $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
 ## OUTPUT
- 
+ ![Alt text](os-69.png)
 cat exread.sh 
 ```bash
 #!/bin/bash
@@ -961,7 +964,7 @@ $ chmod 755 exread.sh
  
 $ ./exread.sh 
 ## OUTPUT
-
+![Alt text](os-70.png)
 
  cat exread1.sh
 ```bash
@@ -973,7 +976,7 @@ echo "Hello $name, welcome to my program. “
 $ chmod 755 exread1.sh 
 
 ## OUTPUT
-
+![Alt text](os-71.png)
 
 
 $ ./exread1.sh 
@@ -995,7 +998,7 @@ fi
 ```
 ## OUTPUT
  ./funcex.sh 
-
+![Alt text](os-72.png)
  
  ./funcex.sh 1 2
 
@@ -1011,8 +1014,9 @@ done
 $ chmod 777 argshift.sh
 
 ## OUTPUT
+
 $ ./argshift.sh 1 2 3
- 
+ ![Alt text](os-73.png)
  cat argshift1.sh
 ```bash
  #/bin/bash 
@@ -1029,6 +1033,7 @@ done
 $ chmod 777 argshift.sh
 ## OUTPUT
 $ ./argshift.sh 1 2 3
+![Alt text](<Screenshot at 2025-09-05 11-31-33.png>)
  
 cat argshift.sh
 ```bash
@@ -1042,7 +1047,7 @@ set +x
 ```
 ## OUTPUT
  ./argshift.sh 1 2 3
- 
+![Alt text](<Screenshot at 2025-09-05 11-34-45.png>) 
  
 cat > nc.awk
 ```bash
@@ -1073,7 +1078,7 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT 
- 
+ ![Alt text](os-74.png)
 cat > palindrome.sh
 ```bash
 #num=545
@@ -1100,7 +1105,7 @@ else
 fi
 ```
 ## OUTPUT 
-
+![Alt text](os-75.png)
 
 # RESULT:
 The Commands are executed successfully.
