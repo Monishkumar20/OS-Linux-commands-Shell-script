@@ -65,7 +65,7 @@ comm file1 file2
  
 diff file1 file2
 ## OUTPUT
-![Alt text](<cmp os exp.png>)
+
 
 #Filters
 
@@ -88,17 +88,16 @@ cat > file22
 
 cut -c1-3 file11
 ## OUTPUT
+
+
+
+
 cut -d "|" -f 1 file22
-
-![Alt text](<hello world os exp.png>)
-
-![Alt text](<cat file22 os exp.png>)
-
 ## OUTPUT
-cut -d "|" -f 2 file22
-!
-[Alt text](<cut f2 os exp.png>)
 
+
+
+cut -d "|" -f 2 file22
 ## OUTPUT
 
 
@@ -114,41 +113,40 @@ hello world
  
 grep Hello newfile 
 ## OUTPUT
-![Alt text](backupdir/cat%3Efile.png)
 
 
 
 grep hello newfile 
 ## OUTPUT
-![Alt text](<backupdir/grep hello.png>)
+
 
 
 
 grep -v hello newfile 
 ## OUTPUT
-![Alt text](<backupdir/grep -v.png>)
+
 
 
 cat newfile | grep -i "hello"
 ## OUTPUT
-![Alt text](<backupdir/cat new.png>)
+
 
 
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
-![Alt text](<backupdir/cat new-2.png>)
+
 
 
 
 grep -R ubuntu /etc
 ## OUTPUT
-![Alt text](<backupdir/grep -r.png>)
+
 
 
 grep -w -n world newfile   
 ## OUTPUT
-![Alt text](<backupdir/grep w.png>)
+
 
 cat < newfile 
 ```
@@ -171,60 +169,60 @@ Linux is best in this World
  ```
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
-![Alt text](backupdir/cat-2.png)
+
 
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
-![Alt text](os-3.png)
+
 
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
-![Alt text](os4.png)
+
 
 
 
 egrep '(^hello)' newfile 
 ## OUTPUT
-![Alt text](os-5.png)
+
 
 
 egrep '(world$)' newfile 
 ## OUTPUT
-![Alt text](os-6.png)
+
 
 
 egrep '(World$)' newfile 
 ## OUTPUT
-![Alt text](os-10.png)
+
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
-![Alt text](os05.png)
+
 
 
 egrep '[1-9]' newfile 
 ## OUTPUT
-![Alt text](os06.png)
+
 
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
-![Alt text](os-11.png)
+
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
-![Alt text](os-12.png)
+
 
 egrep l{2} newfile
 ## OUTPUT
-![Alt text](os13.png)
+
 
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
-![Alt text](os-14.png)
+
 
 cat > file23
 ```
@@ -242,76 +240,76 @@ cat > file23
 
 sed -n -e '3p' file23
 ## OUTPUT
-![Alt text](os-15.png)
+
 
 
 sed -n -e '$p' file23
 ## OUTPUT
-![Alt text](os07.png)
+
 
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
-![Alt text](os-16.png)
+
 
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
-![Alt text](os-18.png)
+
 
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
-![Alt text](os-19.png)
+
 
 
 sed -n -e '1,5p' file23
 ## OUTPUT
-![Alt text](os-20.png)
+
 
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
-![Alt text](os-21.png)
+
 
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
-![Alt text](os-22.png)
+
 
 
 seq 10 
 ## OUTPUT
-![Alt text](os-23.png)
+
 
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
-![Alt text](os-24.png)
+
 
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
 
-![Alt text](os-25.png)
+
 
 seq 3 | sed '2a hello'
 ## OUTPUT
-![Alt text](os-26.png)
+
 
 
 seq 2 | sed '2i hello'
 ## OUTPUT
-![Alt text](os-27.png)
+
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
-![Alt text](os-29.png)
+
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
-![Alt text](os-31.png)
+
 
 
 sed -n '2,4{s/$/*/;p}' file23
@@ -328,7 +326,7 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
-![Alt text](os-33.png)
+
 
 cat > file22
 ```
@@ -341,7 +339,7 @@ cat > file22
 ``` 
 uniq file22
 ## OUTPUT
-![Alt text](os-34.png)
+
 
 
 #Using tr command
@@ -364,18 +362,18 @@ www. mrcet.... com
  ```
 cat urllist.txt | tr -d ' '
  ## OUTPUT
-![Alt text](os-35.png)
+
 
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
-![Alt text](os-36.png)
+
 
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
-![Alt text](os-37.png)
+
 
 mkdir backupdir
  
@@ -385,19 +383,19 @@ cd backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
-![Alt text](os-38.png)
+
 
 tar -xvf backup.tar
 ## OUTPUT
-![Alt text](os-39.png)
+
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
- ![Alt text](os-40.png)
+ 
 gunzip backup.tar.gz
 ## OUTPUT
-![Alt text](os-41.png)
+
  
 # Shell Script
 ```
@@ -407,7 +405,7 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
-![Alt text](os-42.png)
+
  
 cat << stop > herecheck.txt
 ```
@@ -419,7 +417,7 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
-![Alt text](os-43.png)
+
 
 cat < scriptest.sh 
 ```bash
@@ -457,25 +455,24 @@ chmod 777 scriptest.sh
 ./scriptest.sh 1 2 3
 
 ## OUTPUT
-![Alt text](os-44.png)
-![Alt text](os-45.png)
+
  
 ls file1
 ## OUTPUT
-![Alt text](os-46.png)
+
 echo $?
 ## OUTPUT 
 ./one
 bash: ./one: Permission denied
- ![Alt text](os-47.png)
+ 
 echo $?
 ## OUTPUT 
-![Alt text](os-48.png) 
+ 
 abcd
  
 echo $?
  ## OUTPUT
-![Alt text](os-49.png)
+
 
  
 # mis-using string comparisons
@@ -507,7 +504,7 @@ echo "$val1 is less than $val2"
 fi
 ```
 ##OUTPUT
-![Alt text](os-50.png)
+
 
 
 chmod 755 strcomp.sh
@@ -541,7 +538,7 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
-![Alt text](os-51.png)
+
 # check if with file location
 cat>ifnested.sh 
 ```bash
@@ -587,8 +584,7 @@ fi
 
 ./ifnested.sh 
 ## OUTPUT
-![Alt text](os-52.png)
-![Alt text](os-53.png)
+
 
 
 # using numeric test comparisons
@@ -632,8 +628,7 @@ $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
 ##OUTPUT
-![Alt text](os-54.png)
-![Alt text](os-55.png)
+
 # check if a file
 cat > ifnested.sh 
 ```bash
@@ -682,8 +677,6 @@ $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
 ##OUTPUT
-![Alt text](os-56.png)
-![Alt text](os-57.png)
 
 # looking for a possible value using elif
 cat elifcheck.sh 
